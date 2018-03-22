@@ -4,19 +4,19 @@ description: What unites us all is a desire to create better end customer experi
   Were building a full suite of tools and technology that make essential things in
   peoples everyday life ndash; money, finances, identity ndash; simpler for you. Now
   is the time to join our beta program, and help us shape the future.
-image: ""
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
 x-kinRank: "9"
 x-alexaRank: ""
 tags:
 - US Bank
-created: "2018-03-14"
-modified: "2018-03-14"
+created: "2018-03-22"
+modified: "2018-03-22"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Capital One DevExchange
   description: What unites us all is a desire to create better end customer experiences
-  image: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
   humanURL: ""
   baseURL: https://api.reimaginebanking.com//
   tags:
