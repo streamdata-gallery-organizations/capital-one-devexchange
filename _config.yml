@@ -1,9 +1,9 @@
-title: Streamdata Gallery
-url: capital-one-devexchange.api.streamdata.gallery
+title: Streamdata Gallery Capital One DevExchange
+url: capital-one-devexchange.streamdata.gallery
 tag: Capital One DevExchange
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-organizations
+github_user: streamdata-gallery
 github_repo: capital-one-devexchange
 github_branch: master
 collections:
