@@ -1,29 +1,635 @@
 ---
 name: Capital One DevExchange
+x-slug: capital-one-devexchange
 description: What unites us all is a desire to create better end customer experiences.
   Were building a full suite of tools and technology that make essential things in
-  peoples everyday life ndash; money, finances, identity ndash; simpler for you. Now
-  is the time to join our beta program, and help us shape the future.
+  peoples everyday life &ndash; money, finances, identity &ndash; simpler for you.
+  Now is the time to join our beta program, and help us shape the future.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
 x-kinRank: "9"
 x-alexaRank: ""
-tags:
-- US Bank
-created: "2018-03-25"
-modified: "2018-03-25"
-url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/apis.yaml
+tags: Capital One DevExchange
+created: "2018-05-21"
+modified: "2018-05-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Capital One DevExchange
-  description: What unites us all is a desire to create better end customer experiences
+- name: Capital One DevExchange Get all accounts
+  x-api-slug: capital-one-devexchange
+  description: Returns the accounts that have been assigned to you.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
-  humanURL: ""
-  baseURL: https://api.reimaginebanking.com//
-  tags:
-  - US Bank
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts
+  tags: Banks,Accounts
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accounts-get-openapi.md
+- name: Capital One DevExchange Get account by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the account with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}
+  tags: Banks,Accounts
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing account
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific account
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}
+  tags: Banks,Accounts
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawals-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing account
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific account
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}
+  tags: Banks,Accounts
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsid-delete-openapi.md
+- name: Capital One DevExchange Create an account
+  x-api-slug: capital-one-devexchange
+  description: Creates an account for the customer with the id provided
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers/{id}/accounts
+  tags: Banks,Customers, , Accounts
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersidaccounts-post-openapi.md
+- name: Capital One DevExchange Get accounts by customer id
+  x-api-slug: capital-one-devexchange
+  description: Returns the accounts associated with the specific customer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers/{id}/accounts
+  tags: Banks,Customers, , Accounts
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersidaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersidaccounts-get-openapi.md
+- name: Capital One DevExchange Get customer that owns the specified account
+  x-api-slug: capital-one-devexchange
+  description: Returns the customer that the account belongs to.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/customer
+  tags: Banks,Accounts, , Customer
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidcustomer-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidcustomer-get-openapi.md
+- name: Capital One DevExchange Get all ATMs
+  x-api-slug: capital-one-devexchange
+  description: Returns all of the Capital One ATMs in the speified search area.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////atms
+  tags: Banks,Atms
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/atms-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/atms-get-openapi.md
+- name: Capital One DevExchange Get ATM by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the ATM with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////atms/{id}
+  tags: Banks,Atms
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/atmsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/atmsid-get-openapi.md
+- name: Capital One DevExchange Get all bills for a specific account
+  x-api-slug: capital-one-devexchange
+  description: Returns the bills that are tied to the specific account.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/bills
+  tags: Banks,Accounts, , Bills
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidbills-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidbills-get-openapi.md
+- name: Capital One DevExchange Create a bill
+  x-api-slug: capital-one-devexchange
+  description: Creates a bill for the specific account
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/bills
+  tags: Banks,Accounts, , Bills
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidbills-post-openapi.md
+- name: Capital One DevExchange Get bill by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the bill with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////bills/{billId}
+  tags: Banks,Bills, Bill
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/billsbillid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/billsbillid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing bill
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific bill
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////bills/{billId}
+  tags: Banks,Bills, Bill
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/billsbillid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing bill
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific bill
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////bills/{billId}
+  tags: Banks,Bills, Bill
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/billsbillid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/billsbillid-delete-openapi.md
+- name: Capital One DevExchange Get all branches
+  x-api-slug: capital-one-devexchange
+  description: Returns all of the Capital One branches.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////branches
+  tags: Banks,Branches
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/branches-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/branches-get-openapi.md
+- name: Capital One DevExchange Get branch by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the branch with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////branches/{id}
+  tags: Banks,Branches
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/branchesid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/branchesid-get-openapi.md
+- name: Capital One DevExchange Get all customers
+  x-api-slug: capital-one-devexchange
+  description: Returns the customers that have been assigned to you.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers
+  tags: Banks,Customers
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customers-get-openapi.md
+- name: Capital One DevExchange Create a customer
+  x-api-slug: capital-one-devexchange
+  description: Creates a customer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers
+  tags: Banks,Customers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customers-post-openapi.md
+- name: Capital One DevExchange Get customer by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the customer with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers/{id}
+  tags: Banks,Customers
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing customer
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific customer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers/{id}
+  tags: Banks,Customers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersid-put-openapi.md
+- name: Capital One DevExchange Get bills by customer id
+  x-api-slug: capital-one-devexchange
+  description: Returns the bills associated with the specific customer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////customers/{id}/bills
+  tags: Banks,Customers, , Bills
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersidbills-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/customersidbills-get-openapi.md
+- name: Capital One DevExchange Delete data associated with your API key.
+  x-api-slug: capital-one-devexchange
+  description: This endpoint deletes any data associated with your API key and of
+    the type passed in as query parameters.  If you do not specify any type to delete,
+    no data will be deleted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////data
+  tags: Banks,Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/data-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/data-delete-openapi.md
+- name: Capital One DevExchange Get all deposits
+  x-api-slug: capital-one-devexchange
+  description: Returns the deposits that you are involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/deposits
+  tags: Banks,Accounts, , Deposits
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsiddeposits-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsiddeposits-get-openapi.md
+- name: Capital One DevExchange Create a deposit
+  x-api-slug: capital-one-devexchange
+  description: Creates a deposit where the account with the ID specified receives
+    the amount.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/deposits
+  tags: Banks,Accounts, , Deposits
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsiddeposits-post-openapi.md
+- name: Capital One DevExchange Get deposit by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the deposit with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////deposits/{id}
+  tags: Banks,Deposits
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/depositsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/depositsid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing deposit
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific deposit
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////deposits/{id}
+  tags: Banks,Deposits
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/depositsid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing deposit
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific deposit
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////deposits/{id}
+  tags: Banks,Deposits
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/depositsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/depositsid-delete-openapi.md
+- name: Capital One DevExchange Get all loans
+  x-api-slug: capital-one-devexchange
+  description: Returns the loans that you are involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/loans
+  tags: Banks,Accounts, , Loans
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidloans-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidloans-get-openapi.md
+- name: Capital One DevExchange Create a loan
+  x-api-slug: capital-one-devexchange
+  description: Creates a loan where the account with the ID specified is debitted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/loans
+  tags: Banks,Accounts, , Loans
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidloans-post-openapi.md
+- name: Capital One DevExchange Get loan by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the loan with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////loans/{id}
+  tags: Banks,Loans
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/loansid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/loansid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing loan
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific loan
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////loans/{id}
+  tags: Banks,Loans
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/loansid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing loan
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific loan
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////loans/{id}
+  tags: Banks,Loans
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/loansid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/loansid-delete-openapi.md
+- name: Capital One DevExchange Get all merchants
+  x-api-slug: capital-one-devexchange
+  description: Returns the merchants that have been assigned to you.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants
+  tags: Banks,Merchants
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchants-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchants-get-openapi.md
+- name: Capital One DevExchange Create a merchant
+  x-api-slug: capital-one-devexchange
+  description: Creates a merchant
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants
+  tags: Banks,Merchants
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchants-post-openapi.md
+- name: Capital One DevExchange Get merchant by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the merchant with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants/{id}
+  tags: Banks,Merchants
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing merchant
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific merchant
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants/{id}
+  tags: Banks,Merchants
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsid-put-openapi.md
+- name: Capital One DevExchange Get all purchases
+  x-api-slug: capital-one-devexchange
+  description: Returns the purchases that you are involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/purchases
+  tags: Banks,Accounts, , Purchases
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidpurchases-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidpurchases-get-openapi.md
+- name: Capital One DevExchange Create a purchase
+  x-api-slug: capital-one-devexchange
+  description: Creates a purchase where the account with the ID specified is the payer.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/purchases
+  tags: Banks,Accounts, , Purchases
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidpurchases-post-openapi.md
+- name: Capital One DevExchange Get purchase by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the purchase with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////purchases/{id}
+  tags: Banks,Purchases
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/purchasesid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/purchasesid-get-openapi.md
+- name: Capital One DevExchange Delete a specific existing purchase
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific purchase
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////purchases/{id}
+  tags: Banks,Purchases
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/purchasesid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/purchasesid-delete-openapi.md
+- name: Capital One DevExchange Update a specific existing purchase
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific purchase
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////purchases/{id}
+  tags: Banks,Purchases
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/purchasesid-put-openapi.md
+- name: Capital One DevExchange Get all purchases by merchant
+  x-api-slug: capital-one-devexchange
+  description: Returns the purchases that a merchant is involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants/{id}/purchases
+  tags: Banks,Merchants, , Purchases
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsidpurchases-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsidpurchases-get-openapi.md
+- name: Capital One DevExchange Get all purchases by account and merchant
+  x-api-slug: capital-one-devexchange
+  description: Returns the purchases that a merchant is involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////merchants/{id}/accounts/{accountId}/purchases
+  tags: Banks,Merchants, , Accounts, Account, Purchases
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsidaccountsaccountidpurchases-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/merchantsidaccountsaccountidpurchases-get-openapi.md
+- name: Capital One DevExchange Get all transfers
+  x-api-slug: capital-one-devexchange
+  description: Returns the transfers that you are involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/transfers
+  tags: Banks,Accounts, , Transfers
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidtransfers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidtransfers-get-openapi.md
+- name: Capital One DevExchange Create a transfer
+  x-api-slug: capital-one-devexchange
+  description: Creates a transfer where the account with the ID specified is the payer.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/transfers
+  tags: Banks,Accounts, , Transfers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidtransfers-post-openapi.md
+- name: Capital One DevExchange Get transfer by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the transfer with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////transfers/{transferId}
+  tags: Banks,Transfers, Transfer
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/transferstransferid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/transferstransferid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing transfer
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific transfer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////transfers/{transferId}
+  tags: Banks,Transfers, Transfer
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/transferstransferid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing transfer
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific transfer
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////transfers/{transferId}
+  tags: Banks,Transfers, Transfer
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/transferstransferid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/transferstransferid-delete-openapi.md
+- name: Capital One DevExchange Get all withdrawals
+  x-api-slug: capital-one-devexchange
+  description: Returns the withdrawals that you are involved in.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/withdrawals
+  tags: Banks,Accounts, , Withdrawals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidwithdrawals-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidwithdrawals-get-openapi.md
+- name: Capital One DevExchange Create a withdrawal
+  x-api-slug: capital-one-devexchange
+  description: Creates a withdrawal where the account with the ID specified is debitted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////accounts/{id}/withdrawals
+  tags: Banks,Accounts, , Withdrawals
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/accountsidwithdrawals-post-openapi.md
+- name: Capital One DevExchange Get withdrawal by id
+  x-api-slug: capital-one-devexchange
+  description: Returns the withdrawal with the specific id
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////withdrawals/{id}
+  tags: Banks,Withdrawals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawalsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawalsid-get-openapi.md
+- name: Capital One DevExchange Update a specific existing withdrawal
+  x-api-slug: capital-one-devexchange
+  description: Updates the specific withdrawal
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////withdrawals/{id}
+  tags: Banks,Withdrawals
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawalsid-put-openapi.md
+- name: Capital One DevExchange Delete a specific existing withdrawal
+  x-api-slug: capital-one-devexchange
+  description: Deletes the specific withdrawal
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com////withdrawals/{id}
+  tags: Banks,Withdrawals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawalsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/withdrawalsid-delete-openapi.md
+- name: Capital One DevExchange
+  x-api-slug: capital-one-devexchange
+  description: What unites us all is a desire to create better end customer experiences.
+    Were building a full suite of tools and technology that make essential things
+    in peoples everyday life &ndash; money, finances, identity &ndash; simpler for
+    you. Now is the time to join our beta program, and help us shape the future.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png
+  humanURL: http://capitalone.com
+  baseURL: https://api.reimaginebanking.com//
+  tags: Capital One DevExchange
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/openapi.md
 x-common:
 - type: x-authentication
   url: https://developer.capitalone.com/platform-documentation/authorization-with-oauth-20/
