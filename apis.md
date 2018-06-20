@@ -5,7 +5,7 @@ description: This is a repository of capital one devexchange APIs, self-containe
   surrounding operations.
 image: http://template.streamdata.gallery/assets/capital-one-devexchange.png
 created: "2018-02-24"
-modified: "2018-05-25"
+modified: "2018-06-20"
 url: http://capital-one-devexchange.streamdata.gallery/apis.json
 specificationVersion: "0.14"
 apis: []
