@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Capital One DevExchange",
+	"description": "This is a repository of capital one devexchange APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/capital-one-devexchange.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-29",
+	"url": "http://capital-one-devexchange.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Capital One DevExchange",
+			"x-api-slug": "capital-one-devexchange",
+			"description": "What unites us all is a desire to create better end customer experiences. Were building a full suite of tools and technology that make essential things in peoples everyday life &ndash; money, finances, identity &ndash; simpler for you. Now is the time to join our beta program, and help us shape the future.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/capitalone-devexchange.png",
+			"humanURL": "http://capitalone.com",
+			"baseURL": "https://api.reimaginebanking.com//",
+			"tags": "Capital One DevExchange",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Capital One DevExchange",
+	"include": [
+		{
+			"name": "Capital One DevExchange",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/capital-one-devexchange/master/_listings/capital-one-devexchange/apis.yaml"
+		}
+	]
+}
